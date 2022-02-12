@@ -102,41 +102,30 @@ html {
 body {
   background-color: var(--very-dark-blue-main-background);
   font-size: 15px;
-  height: 100%;
 }
 main {
   width: 100%;
-  /* min-height: 98vh; */
+  display: flex;
+align-content: center;
+justify-content: center;
+
 }
 
 .header {
   background-color: var(--dark-desaturated-blue-card-background);
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    'header-image'
-    'header-title'
-    'header-text'
-    'header-stats';
-  grid-template-rows: 30% 20% 15% 35%;
-  /* grid-template-rows: 30% 20% 20% 30%; */
-  /* grid-template-rows: 30% 15% 15% 40%; */
-  /* grid-template-rows: 30% auto auto 30%; */
-  /* grid-template-rows: auto 100px 100px auto; */
-  margin: 5rem 1.5rem;
-  position: relative;
-  height: 100vh;
-  /* row-gap: 1rem; */
+  height: 100%;
+  width: 375px;
+  margin-top: 3rem;
 }
 
+  .header-stats{
+
+  }
+
 .header-image {
-  grid-area: header-image;
   height: 100%;
   width: 100%;
   border-radius: 10px 10px 0 0;
-  /* background: hsl(277, 64%, 61%); */
   background: rgba(170, 92, 219, 0.5);
 }
 .header-image > img {
@@ -144,44 +133,40 @@ main {
   height: 100%;
   width: 100%;
   mix-blend-mode: overlay;
+  object-fit: contain;
 }
 
+
 .header-item {
-  /* margin: 1rem 2rem; */
   text-align: center;
-  z-index: 10;
 }
 .header-title {
-  grid-area: header-title;
   color: var(--white-main-heading-stats);
   line-height: 1.2;
   font-size: 25px;
   letter-spacing: 0.8px;
-  margin: 1.5rem 2.5rem 0 2.5rem;
-  /* margin: 1rem 3rem; */
+  margin: 2.5rem 2.5rem 1.5rem 2.5rem;
+  padding: 0 1rem;
 }
 .header-title__insights {
   color: var(--soft-violet-accent);
   letter-spacing: 1.5px;
 }
 .header-text {
-  grid-area: header-text;
   font-size: 15px;
   color: var(--slightly-transparent-white-main-paragraph);
-  margin-top: 0;
-  /* padding: 0 1rem; */
-  margin: 0 2rem;
   line-height: 1.8;
+  margin: 0 2.5rem;
+  padding: 0 1rem;
 }
 .header-stats {
-  grid-area: header-stats;
+  margin: 2.5rem 2.5rem 1.5rem 2.5rem;
 }
 .header-stats__numbers {
   font-weight: 700;
   font-size: 25px;
   color: var(--white-main-heading-stats);
   width: 100%;
-  /* display: block; */
 }
 .header-stats__numbers__subtext {
   display: block;
@@ -191,6 +176,15 @@ main {
   text-transform: uppercase;
   color: var(--slightly-transparent-white-stat-headings);
   margin-bottom: 1rem;
+}
+@media (min-width:376px){
+
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .attribution {
   font-size: 11px;
