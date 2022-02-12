@@ -156,11 +156,13 @@ main {
   color: var(--white-main-heading-stats);
   line-height: 1.2;
   font-size: 25px;
-  margin: 1.5rem 3rem 0 3rem;
+  letter-spacing: 0.8px;
+  margin: 1.5rem 2.5rem 0 2.5rem;
   /* margin: 1rem 3rem; */
 }
 .header-title__insights {
   color: var(--soft-violet-accent);
+  letter-spacing: 1.5px;
 }
 .header-text {
   grid-area: header-text;
@@ -176,7 +178,7 @@ main {
 }
 .header-stats__numbers {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--white-main-heading-stats);
   width: 100%;
   /* display: block; */
@@ -187,7 +189,7 @@ main {
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  color: var(--slightly-transparent-white-main-paragraph);
+  color: var(--slightly-transparent-white-stat-headings);
   margin-bottom: 1rem;
 }
 .attribution {
