@@ -21,7 +21,7 @@ The challenge is to build out this card component and get it looking as close to
 My solution
 | Mobile                                                                                 | Desktop                                                                                 |
 | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| <img src="./screenshot_mobile.png" width="150" height="" alt="Screenshot of solution"> | <img src="./screenshot_desktop.png" width="500" height="" alt="Screenshot of solution"> |
+| <img src="./screenshot_mobile.png" width="180" height="" alt="Screenshot of solution"> | <img src="./screenshot_desktop.png" width="550" height="" alt="Screenshot of solution"> |
 
 ## Links
 
