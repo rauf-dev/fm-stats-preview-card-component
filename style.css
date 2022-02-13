@@ -118,17 +118,16 @@ main {
 }
 
 .header-image {
-  height: 100%;
+  background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+  height: 350px;
   width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.header-overlay{
   border-radius: 10px 10px 0 0;
   background: rgba(170, 92, 219, 0.5);
-}
-.header-image > img {
-  border-radius: 10px 10px 0 0;
   height: 100%;
   width: 100%;
-  mix-blend-mode: overlay;
-  object-fit: contain;
 }
 
 .header-item {
@@ -171,13 +170,12 @@ main {
   color: var(--slightly-transparent-white-stat-headings);
   margin-bottom: 1rem;
 }
-@media (min-width: 376px) {
-}
 
 footer {
   /* position: fixed;
   bottom: 0; */
   width: 100%;
+  padding-bottom: 1rem;
 }
 .attribution {
   font-size: 11px;
@@ -188,15 +186,76 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header {
-    width: 80%;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 10px;
+
+  }
+  .header-image {
+    background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
+    height: 400px;
+    min-width: 50%;
+    border-radius:0 10px 10px 0;
+
+  }
+  .header-overlay{
+    border-radius: 0 10px 10px 0;
+    background: rgba(170, 92, 219, 0.5);
+    height: 100%;
+    width: 100%;
+
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    min-width: 40%;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+
+  }
+  .header-title {
+    text-align: left;
+    margin: 2.5rem 0 1.5rem 0;
+    padding: 0;
+    font-size: 25px;
+  }
+  .header-text {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    /* font-size: 21px; */
   }
   .header-stats {
-    display: inline;
+    display: flex;
+    text-align: left;
+    margin: 2.5rem 2.5rem 1.5rem 0;
+  }
+}
+
+@media (min-width:1000px){
+  .header{
+    width: 80%;
+  }
+  .header-content{
+    margin-left: 3rem;
+    margin-right: 4rem;
+  }
+}
+@media(min-width:1440px){
+  .header{
+    width: 1000px;
   }
 }
